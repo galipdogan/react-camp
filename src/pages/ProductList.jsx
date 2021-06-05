@@ -4,11 +4,11 @@ import ProductService from "../services/productService";
 
 export default function ProductList() {
   const [products, setProducts] = useState([]);
-  //komponent yüklendiği anda yapılmasını istediğimiz yer burası
+  //komponent yüklendiği anda yapılmasını istediğimiz yer burası dataları burada yönetiyoruz
   useEffect(() => {
       let productService=new ProductService()
       productService.getPrducts().then(result=>setProducts(result.data.data)).catch()
-  },[])
+  },[]) //yazdığımız servisi çağırıyoruz ve useeffext data döndürdüğünden bizde datanın datasını alıyoruz
 
 
   return (
