@@ -5,9 +5,11 @@ import { Grid } from "semantic-ui-react";
 import { Route } from "react-router";
 import ProductDetails from "../pages/ProductDetails";
 import CartDetails from "../pages/CartDetails";
+import { ToastContainer } from "react-toastify";
 export default function Dashbord() {
   return (
     <div>
+      <ToastContainer position="bottom-right"/>
       <Grid>
         <Grid.Row>
           <Grid.Column width={4}>
