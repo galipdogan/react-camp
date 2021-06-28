@@ -43,7 +43,7 @@ export default function ProductList() {
             <Table.Cell>{product.unitPrice}</Table.Cell>
             <Table.Cell>{product.unitsInStock}</Table.Cell>
             <Table.Cell>{product.quantityPerUnit}</Table.Cell>
-            <Table.Cell>{product.category.categoryName}</Table.Cell>
+            {<Table.Cell>{product.category.categoryName}</Table.Cell>}
             <Table.HeaderCell><Button onClick={()=>handleAddToCart(product)}>Sepete Ekle</Button></Table.HeaderCell>
           </Table.Row>
           ))}

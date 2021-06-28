@@ -23,6 +23,7 @@ export default function Navi() {
       <Menu inverted fixed="top">
         <Container>
           <Link to="/"><Menu.Item name="home" /></Link> 
+          <Link to="/product/add"><Menu.Item name="Ürün Ekle" /></Link> 
           <Menu.Item name="messages" />
           <Menu.Menu position="right">
             {cartItems.length>0&&<CartSummary/>}
